@@ -84,7 +84,7 @@ public class LoginActivity extends AppCompatActivity {
                 Boolean checkuserpass = DB.checkusernamepassword(user, pass);
                 if(checkuserpass==true){
                     Toast.makeText(LoginActivity.this, "Sign in successfull", Toast.LENGTH_SHORT).show();
-                    Intent intent  = new Intent(getApplicationContext(), LoginActivity.class);
+                    Intent intent  = new Intent(getApplicationContext(), MainActivity.class);
                     startActivity(intent);
                 }else{
                     Toast.makeText(LoginActivity.this, "Invalid Credentials", Toast.LENGTH_SHORT).show();
@@ -94,15 +94,3 @@ public class LoginActivity extends AppCompatActivity {
 
     }
 }
-//    public void onClick(View v) {
-//        if(eMail.getText().toString().equals("20IT022") && password.getText().toString().equals("Bhoomil@1234")){
-//            Toast.makeText(getApplicationContext(),"Login Successfully",Toast.LENGTH_LONG).show();
-//            Intent intent = new Intent(LoginActivity.this, MainActivity.class);
-//            startActivity(intent);
-//        }
-//        else
-//        {
-//            Toast.makeText(getApplicationContext(),"Wrong credentials",Toast.LENGTH_LONG).show();
-//        }
-//
-//    }
