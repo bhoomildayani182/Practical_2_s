@@ -49,7 +49,6 @@ public class LoginActivity extends AppCompatActivity {
                                     + "(?=\\S+$).{8,20}$")) {
                                 password.setError(null);
 
-                                //firebase part
 
                             } else {
                                 password.setError("Create Strong Password");

@@ -58,6 +58,7 @@ public class SignupActivity extends AppCompatActivity {
 
                                             Boolean checkuser = DB.checkusername(seMail_);
                                             if(checkuser==false){
+
                                                 Boolean insert = DB.insertData(seMail_, spassword_);
                                                 if(insert==true){
                                                     Toast.makeText(SignupActivity.this, "Registered successfully", Toast.LENGTH_SHORT).show();
